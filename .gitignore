@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 *.pyo
 *.log
+
+# Local OCR evidence and chapter-specific builders are not source code.
+# They may contain copyrighted page text, unstable OCR output, or drafts that
+# have not passed creator review.
+docs/audit-artifacts/
+scripts/build_structured_cough_final.py
