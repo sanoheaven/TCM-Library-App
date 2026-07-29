@@ -10,3 +10,7 @@ docs/audit-artifacts/
 scripts/build_structured_cough_final.py
 scripts/build_structured_cold_final.py
 scripts/build_structured_asthma_final.py
+
+
+.env
+.venv/

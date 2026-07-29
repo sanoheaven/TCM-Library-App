@@ -1,0 +1,7 @@
+{
+  "schema": "ocr_chapter_manifest_v1",
+  "entries": [
+    {"id": "parent-id", "title": "父题", "header_aliases": [], "start_pdf": 1, "end_pdf": 10},
+    {"id": "child-id", "title": "子项", "title_aliases": [], "parent_id": "parent-id", "start_pdf": 2, "end_pdf": 5}
+  ]
+}

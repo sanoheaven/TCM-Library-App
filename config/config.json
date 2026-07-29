@@ -1,0 +1,32 @@
+{
+  "runtime": {
+    "python": ".venv\\Scripts\\python.exe"
+  },
+  "book_2014_internal_medicine_commentary": {
+    "source_pdf": "D:\\TCM-Library\\02_PDF\\2014_邓必隆_中医内科学评讲_姚荷生著；邓必隆整理_人民卫生出版社_v1.pdf",
+    "pdf_pages": {
+      "start": 17,
+      "end": 346,
+      "book_page_offset": 16,
+      "description": "PDF 17-346 对应书内页 001-330"
+    },
+    "ocr_root": "D:\\TCM-Library\\08_OCR\\BOOK-2014-internal-medicine-commentary-book001-330",
+    "page_images": "D:\\TCM-Library\\08_OCR\\BOOK-2014-internal-medicine-commentary-book001-330\\pages",
+    "rapidocr_candidate": "D:\\TCM-Library\\08_OCR\\BOOK-2014-internal-medicine-commentary-book001-330\\rapidocr_candidate.json",
+    "tesseract_candidate": "D:\\TCM-Library\\08_OCR\\BOOK-2014-internal-medicine-commentary-book001-330\\tesseract_candidate.json",
+    "tesseract_tsv": "D:\\TCM-Library\\08_OCR\\BOOK-2014-internal-medicine-commentary-book001-330\\tesseract_tsv",
+    "dual_ocr_disagreements": "D:\\TCM-Library\\08_OCR\\BOOK-2014-internal-medicine-commentary-book001-330\\dual_ocr_disagreements_v1.json",
+    "rapidocr_risk_list": "D:\\TCM-Library\\08_OCR\\BOOK-2014-internal-medicine-commentary-book001-330\\rapidocr_risk_list_v1.json",
+    "review_priority_queue": "D:\\TCM-Library\\08_OCR\\BOOK-2014-internal-medicine-commentary-book001-330\\ocr_review_priority_v1.json"
+  },
+  "tesseract": {
+    "executable": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "language": "chi_sim",
+    "psm": 6
+  },
+  "policy": {
+    "page_images_are_audit_evidence": true,
+    "ocr_outputs_are_candidates_only": true,
+    "structure_status_before_creator_review": "structure_final_pending_creator_review"
+  }
+}

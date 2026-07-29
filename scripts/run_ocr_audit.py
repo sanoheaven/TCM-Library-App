@@ -40,7 +40,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
 
     engine = RapidOCR()
     pages: list[dict[str, Any]] = []
-    for image_path in image_paths:
+    for index, image_path in enumerate(image_paths, start=1):
         result, _elapsed = engine(str(image_path))
         lines = [
             {
@@ -59,6 +59,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
                 "lines": lines,
             }
         )
+        if index == 1 or index % 10 == 0 or index == len(image_paths):
+            print(f"ocr_progress={index}/{len(image_paths)} pdf_page={page_number(image_path)} lines={len(lines)}", flush=True)
 
     payload: dict[str, Any] = {
         "stage": "ocr_candidate",

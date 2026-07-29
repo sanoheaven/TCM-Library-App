@@ -10,8 +10,8 @@
    - 优先读“待办追踪”和“当前章节状态”。
    - 需要改变既有决策时再读全文。
 2. 处理 OCR/Markdown 时再读：
-   - `D:\TCM-Library\00_Project\OCR转Markdown结构保真规则_v1.md`
-   - 必要时读 `OCR转Markdown结构保真_共性问题与验证方案.md`。
+   - `D:\TCM-Library-App\docs\ocr\structure-fidelity-rules.md`
+   - 必要时读 `D:\TCM-Library-App\docs\ocr\common-issues-and-verification.md`。
 3. 只打开当前目标章节的页图、OCR JSON 和 Markdown；不要启动时遍历整个 `D:\TCM-Library`。
 4. 修改代码前检查本仓库 `git status`，保护已有改动。
 
@@ -26,7 +26,7 @@
 
 - 页图由原 PDF 以 300 DPI 渲染，是 OCR 与人工核图的共同输入。
 - RapidOCR、Tesseract、置信度和风险规则只负责风险排序，不能替代逐页人工阅图。
-- 结构规则 v1.2 目前主要作用于 OCR 之后，不能保证首次 OCR 识字正确。
+- 结构规则 v1.3 目前主要作用于 OCR 之后，不能保证首次 OCR 识字正确。
 - 标签外是正文；评讲必须用成对的 `BEGIN:评讲` / `END:评讲` 明文标签。
 - 普通评讲块从含“【评讲】”的源行开始；边界附近短行必须独立判断，禁止就近吸附。
 - 每条 OCR 来源行必须且只能分配一个角色；遗漏、重复、未知角色均为 0。
@@ -37,15 +37,16 @@
 
 ## 当前工作入口
 
-- 决策日志：`D:\TCM-Library\00_Project\OCR转录项目_决策日志.md`
-- 规则：`D:\TCM-Library\00_Project\OCR转Markdown结构保真规则_v1.md`
+- 决策日志：`D:\TCM-Library\00_Project\OCR转录项目_决策日志.md`（本地审计日志）
+- 通用规则：`D:\TCM-Library-App\docs\ocr\structure-fidelity-rules.md`
+- 验证方案：`D:\TCM-Library-App\docs\ocr\common-issues-and-verification.md`
 - 试点说明：`D:\TCM-Library\08_OCR\PILOT-2014-姚荷生-书内页005-031\README.md`
 - 页图：`D:\TCM-Library\08_OCR\PILOT-2014-姚荷生-书内页005-031\pages`
 - 章节稿：`D:\TCM-Library\09_Markdown\PILOT-2014-姚荷生-书内页005-031`
 
 ## 当前优先级
 
-1. 按 v1.2 重跑《咳嗽》；旧定稿存在已知评讲边界问题。
+1. 按 v1.3 重跑《咳嗽》；旧定稿存在已知评讲边界问题。
 2. 等创作者人工确认《感冒》《喘哮》重做稿。
 3. 前述流程稳定后处理《痰饮》。
 4. 人工核定的新错误类型持续加入风险规则与回归测试。
